@@ -1,0 +1,69 @@
+.table-main{
+   text-align: right!important;
+   .makeStyles-table-1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+.MuiTableHead-root{
+    width: 100%;
+}
+   }
+   th{
+    text-align: right!important;
+    @include width(301px);
+    text-align: center!important;
+    &:nth-child(n+2){
+     
+        @include width(260px);
+        border: 1px solid #4444;
+        text-align: center!important;
+    }
+   }
+   .MuiTableBody-root{
+       .MuiTableCell-root {
+        @include width(315px);
+        text-align: center;
+        &:nth-child(n+2){
+        @include width(260px);
+        border: 1px solid #4444;
+        }
+       }
+   }
+   .btn-add-form{
+       border: 1px solid $secondColor;
+       color: $secondColor;
+       background-color: $colorBase;
+   }
+   .input-time{
+    @include width(145px);
+    padding: 0 12px;
+   }
+  
+}
+.MuiPaper-root{
+    min-height: 550px!important;
+    max-height: 550px!important;
+    background: antiquewhite;
+    overflow-y: auto!important;
+   }
+   .btn-exit-form{
+    border: 1px solid  $secondColor;
+    color: $colorBase;
+   background:linear-gradient(to bottom,#8247ce,#5c05ce);
+    margin: 15px;
+    padding: 10px 50px;
+    @include border-radius(20px);
+    font-weight: 500;
+    @include font-size(15px);
+  &:nth-child(1){
+    background-color:$secondColor!important;
+  }
+   }
+   .btn-group-dashboard{
+       width: 100%;
+ 
+
+       display: flex;
+       justify-content: space-around;
+   }

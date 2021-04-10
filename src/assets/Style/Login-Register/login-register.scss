@@ -1,0 +1,73 @@
+@import '../common/_function-size';
+
+.container-main-login{
+    width: 100%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ text-align: right;
+  
+    .container-content-login{
+        border: 1px solid $borderColor;
+        border-radius: 4px;
+        padding: 20px;
+        @include width(376px);
+       
+        .star-main{
+            color: $colorStar;
+        }
+        .input-main{
+border: $borderMain;
+width: 100%;
+@include padding(5px);
+border-radius: $borderRadius;
+margin: 10px;
+
+        }
+        .btn-act-main{
+           display: flex;
+           width: 100%;
+           justify-content: center;
+           @include padding(5px);
+          
+        }
+        
+        .error-message{
+            color: $colorStar;
+        }
+        form{
+            label{
+                
+    width: 100%;
+    height: 84px;
+direction: rtl;
+            }
+        }
+    }
+  
+}
+
+.btn-act{
+    //    background: linear-gradient(to bottom,#8247ce,#5c05ce);
+    background:linear-gradient(to bottom,#8247ce,#5c05ce);
+       border: none;
+       border-radius: $borderRadius;
+       @include height(40px);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       @include width(110px);
+       @include font-size(16px);
+       font-weight: 500;
+       color: $colorBase;
+     
+       &:nth-child(2){
+           margin-left: 5px;
+           background: $colorBase!important;
+           border: 1px solid #8247ce!important;
+           color: $colorHover;
+       }
+
+   }

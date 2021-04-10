@@ -1,0 +1,82 @@
+.modal-main{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+  
+}
+.child-modal-main{
+    background-color: $colorBase;
+@include width(500px);
+@include height(400px);
+padding: 2rem;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row-reverse;
+.child-select{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   border-bottom: 1px solid #333;
+   height: 40px;
+    p{
+        margin: 0;
+        display: inline-block;
+        float: right;
+       
+    }
+    select{
+        @include width(146px);
+        direction: rtl;
+        padding:0 4px  5px 5px;
+    }
+}
+
+   .textarea-child{
+       width: 100%;
+    height: 250px!important;
+   }
+   .button-child{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  .textarea-child{
+      border: $borderMain;
+      margin-top: 10px;
+      text-align: right;
+      padding: 10px 20px;
+  }
+   }
+
+}
+.child-modal{
+    
+}
+
+.close-modal-btn{
+    background-color: red;
+    width:30px!important;
+    height: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-weight: 500;
+  color: $colorBase;
+  padding: 0;
+ top: -10px;
+float: right;
+right: 20px;
+
+
+}

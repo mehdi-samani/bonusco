@@ -1,0 +1,25 @@
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+  }
+
+  @mixin border-radius($size) {
+    border-radius: calculateRem($size);
+  }
+  @mixin padding($size) {
+    padding: calculateRem($size);
+  }
+  @mixin height($sixe) {
+      height: calculateRem($sixe);
+      
+  }
+  @mixin width($sixe) {
+    width: calculateRem($sixe);
+    
+}
+@mixin font-size($sixe) {
+    font-size: calculateRem($sixe);
+    
+}
+  
+  
